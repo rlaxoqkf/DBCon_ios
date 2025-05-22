@@ -1,0 +1,6 @@
+framework module Pods_DemoUIShowcase {
+  umbrella header "Pods-DemoUIShowcase-umbrella.h"
+
+  export *
+  module * { export * }
+}

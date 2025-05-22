@@ -1,0 +1,24 @@
+PODS:
+  - FloatingPanel (3.0.0)
+  - SkeletonView (1.30.4)
+  - TTGSnackbar (1.12.0)
+
+DEPENDENCIES:
+  - FloatingPanel
+  - SkeletonView
+  - TTGSnackbar
+
+SPEC REPOS:
+  trunk:
+    - FloatingPanel
+    - SkeletonView
+    - TTGSnackbar
+
+SPEC CHECKSUMS:
+  FloatingPanel: dcea37373dffc1f93a05dd0268927f8b7476e5eb
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  TTGSnackbar: 8e7650b9b1f5f44e40228473455986f5c12213c7
+
+PODFILE CHECKSUM: a5fc013482ee9eb8fe22ebf79054758ec53d5a9b
+
+COCOAPODS: 1.16.2
