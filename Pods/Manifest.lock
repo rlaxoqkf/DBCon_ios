@@ -1,24 +1,28 @@
 PODS:
   - FloatingPanel (3.0.0)
+  - lottie-ios (4.5.1)
   - SkeletonView (1.30.4)
   - TTGSnackbar (1.12.0)
 
 DEPENDENCIES:
   - FloatingPanel
+  - lottie-ios
   - SkeletonView
   - TTGSnackbar
 
 SPEC REPOS:
   trunk:
     - FloatingPanel
+    - lottie-ios
     - SkeletonView
     - TTGSnackbar
 
 SPEC CHECKSUMS:
   FloatingPanel: dcea37373dffc1f93a05dd0268927f8b7476e5eb
+  lottie-ios: 248b380fa1b97d18e792c37d90da7ab2aa0d6562
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
   TTGSnackbar: 8e7650b9b1f5f44e40228473455986f5c12213c7
 
-PODFILE CHECKSUM: a5fc013482ee9eb8fe22ebf79054758ec53d5a9b
+PODFILE CHECKSUM: 04e40c80a9707bef5388a267b91ff0e3414ce6a7
 
 COCOAPODS: 1.16.2

@@ -6,4 +6,6 @@ target 'DemoUIShowcase' do
   pod 'FloatingPanel'
   pod 'TTGSnackbar'
   pod 'SkeletonView'
+  pod 'lottie-ios'
+
 end

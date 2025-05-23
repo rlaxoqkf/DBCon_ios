@@ -58,5 +58,24 @@ class ViewController: UIViewController {
                 let skeletonVC = storyboard.instantiateViewController(withIdentifier: "SkeletonVC")
                 self.present(skeletonVC, animated: true)
     }
+    
+    @IBAction func showInfiniteScrollDemo(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "InfiniteScrollVC")
+            self.present(vc, animated: true)
+    }
+    
+    @IBAction func showMicroInteractionDemo(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "LottieMicroInteractionVC")
+            self.present(vc, animated: true)
+    }
+    
+    @IBAction func show3DProduct(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "Product3DVC")
+            self.present(vc, animated: true)
+    }
+    
 }
 
