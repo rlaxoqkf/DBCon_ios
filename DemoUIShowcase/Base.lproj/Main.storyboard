@@ -70,7 +70,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eig-ru-mIf">
                                         <rect key="frame" x="0.0" y="458.33333333333337" width="193" height="24.333333333333314"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Micro Interaction"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Mirco Inter-Lottie"/>
                                         <connections>
                                             <action selector="showMicroInteractionDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a34-MU-b5g"/>
                                         </connections>
@@ -78,7 +78,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7v-yi-hIV">
                                         <rect key="frame" x="0.0" y="534.66666666666663" width="193" height="24.333333333333371"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="3D Design"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Micro Inter-내부 구현"/>
                                         <connections>
                                             <action selector="show3DProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AxP-yL-ggp"/>
                                         </connections>
@@ -119,8 +119,8 @@
                                         <attributedString key="attributedText">
                                             <fragment content="팝업 예시입니다">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="BMJUAOTF"/>
-                                                    <font key="NSOriginalFont" size="17" name="BMJUAOTF"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -136,8 +136,8 @@
                                                 <fragment content="닫기">
                                                     <attributes>
                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="10" name="BMJUAOTF"/>
-                                                        <font key="NSOriginalFont" size="12" name="BMJUAOTF"/>
+                                                        <font key="NSFont" metaFont="system" size="10"/>
+                                                        <font key="NSOriginalFont" metaFont="cellTitle"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -225,9 +225,41 @@
                     <view key="view" contentMode="scaleToFill" id="J8y-fv-7SH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsX-kS-yrm">
+                                <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="8YG-OJ-cgh"/>
+                                    <constraint firstAttribute="width" constant="150" id="QFo-4L-5af"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="heartTapped:" destination="IGO-rz-3SN" eventType="touchUpInside" id="sc9-7I-f3j"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="MPe-VA-qvg" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Fqx-6j-5mo"/>
+                                    <constraint firstAttribute="width" constant="150" id="SKp-Mj-PVc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vMt-bS-maK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UsX-kS-yrm" firstAttribute="centerX" secondItem="J8y-fv-7SH" secondAttribute="centerX" id="D3W-zw-9GO"/>
+                            <constraint firstItem="UsX-kS-yrm" firstAttribute="centerY" secondItem="J8y-fv-7SH" secondAttribute="centerY" id="Jye-OJ-4mx"/>
+                            <constraint firstItem="MPe-VA-qvg" firstAttribute="centerY" secondItem="J8y-fv-7SH" secondAttribute="centerY" id="SHh-Kt-sLC"/>
+                            <constraint firstItem="MPe-VA-qvg" firstAttribute="centerX" secondItem="J8y-fv-7SH" secondAttribute="centerX" id="fze-oA-ZRm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heartLottieView" destination="MPe-VA-qvg" id="PJt-IR-n16"/>
+                        <outlet property="heartTapButton" destination="UsX-kS-yrm" id="5WI-Mk-H6W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZcU-OM-hUy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
